@@ -283,7 +283,7 @@ form {
   color: var(--clr-light);
 }
 
-.mob {
+#mob {
   text-align: center;
   align: center;
 }
