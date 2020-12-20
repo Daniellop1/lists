@@ -1,12 +1,12 @@
 {
-  "name": "sass-starter-project",
+  "name": "todoapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kevin Powell",
+  "author": "Daniel Lopez",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
