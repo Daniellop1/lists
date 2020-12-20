@@ -5,15 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Todo Dglobal</title>
+  <title>Lists by Daniel López</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
   <script defer src="script.js"></script>
   <script defer src="mobile.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcXJw4aAAAAALwI0Oc3JO2U5Tbp58Hzs2z9mly5"></script>
 </head>
 
 <body>
-  <h1 class="title">TO DO</h1>
+  <h1 class="title">LISTS</h1>
 
   <div class="all-tasks">
     <h2 class="task-list-title">My lists</h2>
@@ -46,6 +47,7 @@
         <button class="btn delete" data-clear-complete-tasks-button>Clear completed tasks</button>
         <button class="btn delete" data-delete-list-button>Delete list</button>
         <a class="btn credit" href="https://github.com/daniellop1">Made by Daniellop1</a>
+        <a class="btn credit">We use recaptcha to protect the site</a>
       </div>
     </div>
   </div>
@@ -60,6 +62,15 @@
       </label>
     </div>
   </template>
+     <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LcXJw4aAAAAALwI0Oc3JO2U5Tbp58Hzs2z9mly5', {action: 'submit'}).then(function(token) {
+          });
+        });
+      }
+  </script>
 </body>
 
 </html>
