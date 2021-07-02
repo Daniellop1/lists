@@ -9,7 +9,7 @@
   "author": "Daniel Lopez",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "2.26.14",
+    "browser-sync": "2.27.4",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "7.0.1",
     "gulp-sass": "4.1.0",
